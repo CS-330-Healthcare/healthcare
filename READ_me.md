@@ -2,11 +2,11 @@ On Login Page -
 
 For Profile 1:
 
-Username:dddd
-Password:dddd
+Username:bojack
+Password:bojack
 
 
 For Profile 2:
 
-Username:eeee
-Password:eeee
+Username:diane
+Password:diane
