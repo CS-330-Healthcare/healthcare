@@ -121,12 +121,12 @@ button:hover {
 
     <label for="name"><b>Name</b></label>
     <input type="text" placeholder="Enter Name" name="name" required>
-    
+
     <label for="age"><b>Age</b></label>
     <input type="text" placeholder="Enter Age" name="age" required>
-    
-    
-    <div class="dropdown">
+
+
+  <!--  <div class="dropdown">
   <button class="dropbtn">Insurance Provider</button>
   <div class="dropdown-content">
   <a href="#">Aetna</a>
@@ -136,6 +136,16 @@ button:hover {
   <a href="#">Other</a>
   </div>
 </div>
+-->
+<label for="health_insurance">Insurance Provider:</label>
+
+<select id="health_insurance">
+  <option value="Aetna">Aetna</option>
+  <option value="Blue Cross Blue Shield">Blue Cross Blue Shield</option>
+  <option value="Anthem">Anthem</option>
+  <option value="United Healthcare">United Healthcare</option>
+  <option value="Other">Other</option>
+</select>
 
 <br><br><br>
     <b> Gender</b><br><br> <input type="radio" id="male" name="gender" value="male">
@@ -145,7 +155,7 @@ button:hover {
 	<input type="radio" id="other" name="gender" value="other">
 	<label for="other">Other</label><br><br>
 
-    
+
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
@@ -154,17 +164,17 @@ button:hover {
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    
-    
-   
+
+
+
 
   <div class="clearfix">
       <button type="button" class="cancelbtn"  onclick="location.reload()">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
-    
-    
+
+
 </form>
 
 </body>
