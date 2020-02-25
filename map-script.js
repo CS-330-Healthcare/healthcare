@@ -1,4 +1,4 @@
-//  This is based on code written by Attila Albert and found here: https://colorlib.com/wp/bootstrap-sidebar/ 
+//  This is based on code written by Attila Albert and found here: https://colorlib.com/wp/bootstrap-sidebar/
 
 
 // arrays to hold copies of the markers and html used by the side_bar
@@ -21,8 +21,8 @@ function initialize() {
 	});
 	// create the map
 	var myOptions = {
-		zoom: 8,
-		center: new google.maps.LatLng(43.907787, -79.359741),
+		zoom: 14,
+		center: new google.maps.LatLng(42.0451, -87.6877),
 		mapTypeControl: true,
 		mapTypeControlOptions: {
 			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
