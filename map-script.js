@@ -39,7 +39,7 @@ function initialize() {
 	// Add markers to the map
 	// Set up three markers with info windows
 	// add the points
-	var point = new google.maps.LatLng(42.04700, -87.68408);
+	var point = new google.maps.LatLng(42.048152, -87.684209);
 	var marker = createMarker(
 		point,
 		"Dr. Steven Beckway, DO",
