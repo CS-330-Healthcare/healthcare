@@ -36,6 +36,32 @@ body {
   text-align: center;
 }
 
+button-left {
+  background-color: #DCDCDC;
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button-right {
+  background-color: #D3D3D3;
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+h2:hover {
+  color: rgb(0, 114, 178);
+}
+
 
 </style>
 </head>
@@ -43,15 +69,16 @@ body {
 
 <div class="split left">
   <div class="centered">
-    <h2>Find a Primary Care Doctor</h2>
+    <button-left type="button" class="button"  onclick="window.open('map-index.html')"> <h2> Find a Primary Care Doctor </h2></button-left>
+
   </div>
 </div>
 
 <div class="split right">
   <div class="centered">
-    <h2>Find a Service</h2>
+    <button-right type="button" class="button"> <h2>Find a Service</h2></button-right>
   </div>
 </div>
-     
+
 </body>
-</html> 
+</html>
