@@ -66,7 +66,7 @@ hr {
 
 
 button {
-  background-color: #4CAF50;
+  background-color: rgb(0, 114, 178);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -83,7 +83,7 @@ button:hover {
 
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: rgb(213,94,0);
 }
 
 
@@ -169,8 +169,10 @@ button:hover {
 
 
   <div class="clearfix">
-      <button type="button" class="cancelbtn"  onclick="location.reload()">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="button" class="cancelbtn"  onclick="window.open('login.html')">Cancel</button>
+
+      <!-- // FIX THIS SO THAT IT ONLY GOES TO HOMEPAGE IF YOU'VE ENTERED ALL INFO.  -->
+      <button type="submit" class="signupbtn" onclick="window.open('homepage.html')" >Sign Up</button>
     </div>
   </div>
 
