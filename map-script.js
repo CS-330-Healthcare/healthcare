@@ -21,7 +21,7 @@ function initialize() {
 	});
 	// create the map
 	var myOptions = {
-		zoom: 15,
+		zoom: 14,
 		center: new google.maps.LatLng(42.0490, -87.6844),
 		mapTypeControl: true,
 		mapTypeControlOptions: {
@@ -53,7 +53,7 @@ function initialize() {
 		"Dr. Ng Hyman MD -- In Network<br>General Practitioner<br>633 Emerson St.<br>(847) 491-2119"
 	);
 
-	var point = new google.maps.LatLng(42.05218, -87.69343);
+	var point = new google.maps.LatLng(42.065490, -87.684210);
 	var marker = createMarker(
 		point,
 		"Dr. Jamie Titen, DO",
