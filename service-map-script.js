@@ -56,8 +56,8 @@ function initialize() {
 	var point = new google.maps.LatLng(42.0490, -87.6815);
 	var marker = createMarker(
 		point,
-		"$10 <br> Out of Network <br> CVS Pharmacy",
-		"$10 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201 <br> (847) 328-3105"
+		"$12.50 <br> Out of Network <br> CVS Pharmacy",
+		"$12.50 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201 <br> (847) 328-3105"
 	);
 
 }
