@@ -96,11 +96,13 @@ function createMarker(latlng, name, html) {
 		mouseenter: function() {
 			$(this).css("color", "rgb(45, 100, 245)"); // change sidebar text to blue when you hover
 			$(this).css("font-weight", "bold"); // change sidebar text to bold when you hover
-
+			infowindow.setContent(contentString);
+			$(this).css(infowindow.open(map, marker));
 		},
 		mouseleave: function() {
 			$(this).css("color", "#000");
 			$(this).css("font-weight", "normal"); // change sidebar text back to normal
+			$(this).css(infowindow.close(map, marker));
 		}
 	}).appendTo(sidebar);
 }
