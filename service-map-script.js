@@ -39,10 +39,16 @@ function initialize() {
 	// Add markers to the map
 	// Set up three markers with info windows
 	// add the points
+
+	// var point = new google.maps.LatLng();
+	// var marker = createMarker(
+	// "<br> <br><br>"
+	// );
+
 	var point = new google.maps.LatLng(42.0394, -87.6806);
 	var marker = createMarker(
 		point,
-		"$35 <br> Out of Network<br>Jewel-Osco Pharmacy <br> Rating: 2.9/5.0",
+		"<br><br>$35 <br> Out of Network<br>Jewel-Osco Pharmacy <br> Rating: 2.9/5.0",
 		"$35 <br> Out of Network<br> Jewel-Osco Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201<br>(847) 328-3105"
 	);
 
