@@ -36,23 +36,28 @@ function initialize() {
 		infowindow.close();
 	});
 
-	
-    
-    
-    var point = new google.maps.LatLng(42.052215, -87.678939);
+	// Add markers to the map
+	// Set up three markers with info windows
+	// add the points
+
+	// var point = new google.maps.LatLng();
+	// var marker = createMarker(
+	// "<br> <br><br>"
+	// );
+
+	var point = new google.maps.LatLng(42.052215, -87.678939);
 	var marker = createMarker(
 		point,
 		"<br><br>$15 <br> In Network <br> Searle Health Center <br> Rating: 4.6/5.0",
 		"$15 <br> In Network <br> Searle Health Center <br>633 Emerson St.<br>(847) 491-2119"
 	);
-    
-    	var point = new google.maps.LatLng(42.0490, -87.6815);
+
+	var point = new google.maps.LatLng(42.0490, -87.6815);
 	var marker = createMarker(
 		point,
 		"$40 <br> Out of Network <br> CVS Pharmacy <br> Rating: 3.4/5.0",
 		"$40 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201 <br> (847) 328-3105"
 	);
-
 
 	var point = new google.maps.LatLng(42.0394, -87.6806);
 	var marker = createMarker(
@@ -60,9 +65,6 @@ function initialize() {
 		"$35 <br> Out of Network<br>Jewel-Osco Pharmacy <br> Rating: 2.9/5.0",
 		"$35 <br> Out of Network<br> Jewel-Osco Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201<br>(847) 328-3105"
 	);
-
-
-
 
 }
 
@@ -109,6 +111,14 @@ function createMarker(latlng, name, html) {
 			$(this).css(infowindow.close(map, marker));
 		}
 	}).appendTo(sidebar);
+}
+
+function goToNewPage()
+{
+    var url = document.getElementById('list').value;
+    if(url != 'none') {
+        window.location = url;
+    }
 }
 
 google.maps.event.addDomListener(window, "load", initialize);
