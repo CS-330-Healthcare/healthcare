@@ -39,25 +39,31 @@ function initialize() {
 	// Add markers to the map
 	// Set up three markers with info windows
 	// add the points
+
+	// var point = new google.maps.LatLng();
+	// var marker = createMarker(
+	// "<br> <br><br>"
+	// );
+
 	var point = new google.maps.LatLng(42.0394, -87.6806);
 	var marker = createMarker(
 		point,
-		"$10 <br> Out of Network<br>Jewel-Osco Pharmacy",
-		"$10 <br> Out of Network<br> Jewel-Osco Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201<br>(847) 328-3105"
+		"<br><br>$35 <br> Out of Network<br>Jewel-Osco Pharmacy <br> Rating: 2.9/5.0",
+		"$35 <br> Out of Network<br> Jewel-Osco Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201<br>(847) 328-3105"
 	);
 
 	var point = new google.maps.LatLng(42.052215, -87.678939);
 	var marker = createMarker(
 		point,
-		"$15 <br> In Network <br> Searle Health Center",
+		"$15 <br> In Network <br> Searle Health Center <br> Rating: 4.6/5.0",
 		"$15 <br> In Network <br> Searle Health Center <br>633 Emerson St.<br>(847) 491-2119"
 	);
 
 	var point = new google.maps.LatLng(42.0490, -87.6815);
 	var marker = createMarker(
 		point,
-		"$12.50 <br> Out of Network <br> CVS Pharmacy",
-		"$12.50 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201 <br> (847) 328-3105"
+		"$40 <br> Out of Network <br> CVS Pharmacy <br> Rating: 3.4/5.0",
+		"$40 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201 <br> (847) 328-3105"
 	);
 
 }
@@ -96,11 +102,13 @@ function createMarker(latlng, name, html) {
 		mouseenter: function() {
 			$(this).css("color", "rgb(45, 100, 245)"); // change sidebar text to blue when you hover
 			$(this).css("font-weight", "bold"); // change sidebar text to bold when you hover
-
+			infowindow.setContent(contentString);
+			$(this).css(infowindow.open(map, marker));
 		},
 		mouseleave: function() {
 			$(this).css("color", "#000");
 			$(this).css("font-weight", "normal"); // change sidebar text back to normal
+			$(this).css(infowindow.close(map, marker));
 		}
 	}).appendTo(sidebar);
 }

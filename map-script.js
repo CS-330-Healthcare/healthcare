@@ -109,9 +109,9 @@ function createMarker(latlng, name, html) {
 		mouseleave: function() {
 			$(this).css("color", "#000");
 			$(this).css("font-weight", "normal"); // change sidebar text to bold when you hover
+			$(this).css(infowindow.close(map, marker));
 		}
 	}).appendTo(sidebar);
 }
 
 google.maps.event.addDomListener(window, "load", initialize);
-
