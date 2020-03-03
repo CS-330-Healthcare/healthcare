@@ -131,9 +131,11 @@ body {
 
 .sidebar-nav li {
   color: #000;
-  text-indent: 20px;
-  line-height: 40px;
+  margin-left: 20px;
+  /* text-indent: 20px each-line; */
+  line-height: 25px;
   cursor: pointer;
+  border-bottom-style: solid;
 }
 
 
