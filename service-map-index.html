@@ -16,6 +16,15 @@
 		<ul class="sidebar-nav" id="side_bar">
 			<li class="sidebar-brand" style="font-weight: bold; color: #000;">
 				<h1>Flu Shots</h1>
+				<div id="sort-select">
+					<select name="list" id="list" accesskey="target">
+						<option value='none' selected>Sort Results</option>
+						<option value="homepage.html">Home</option>
+						<option value="theme2.html">Theme 2</option>
+						<option value="theme3.html">Theme 3</option>
+					</select>
+					<input type=button value="Sort" onclick="goToNewPage()" />
+				</div>
 			</li>
 			<hr>
 		</ul>
