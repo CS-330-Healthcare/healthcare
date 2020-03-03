@@ -8,6 +8,24 @@
   <link rel="stylesheet" href="./service-map-style.css">
 
 </head>
+<style>
+    button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 10%;
+        font-size: 18px;}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+    </style>
 <body>
 <!-- partial:index.partial.html -->
 <div id="wrapper" class="">
@@ -30,6 +48,7 @@
 						<a href="#menu-toggle" class="gradient-menu" id="menu-toggle"></a> &nbsp;Map&nbsp;
 						<!-- a href="#menu-toggle" class="btn btn-default" >Toggle Sidebar</a -->
 					</h1>
+            <p><button type="submit" onclick="window.open('login.html')">Signout</button></p>
 					<!-- you can use tables or divs for the overall layout -->
 					<div id="map_canvas" style="position: relative; overflow: hidden;">
 					</div>
