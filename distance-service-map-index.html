@@ -33,14 +33,16 @@ button:hover, a:hover {
 	<div id="sidebar-wrapper">
 		<ul class="sidebar-nav" id="side_bar">
 			<li class="sidebar-brand" style="font-weight: bold; color: #000; border-bottom: 0px; border-bottom-color: black;">
-				<h1>Distance</h1>
-                <select name="list" id="list" accesskey="target">
-					<option value='none'>Sort Results</option>
-					<option value="price-service-map-index.html">Price Low-to-High</option>
-					<option value="distance-service-map-index.html" selected>Distance Low-to-High</option>
-					<option value="rating-service-map-index.html">Ratings High-to-Low</option>
-				</select>
-				<input type=button value="Sort" onclick="goToNewPage()" />				
+				<h1>Flu Shots </h1>
+				<div id="sort-select">
+					<select name="list" id="list" accesskey="target">
+						<option value='none'>Sort Results</option>
+						<option value="price-service-map-index.html">Price Low-to-High</option>
+						<option value="distance-service-map-index.html"selected>Distance Low-to-High</option>
+						<option value="rating-service-map-index.html" >Ratings High-to-Low</option>
+					</select>
+					<input type=button value="Sort" onclick="goToNewPage()" />
+				</div>
 			</li>
 			<hr>
 		</ul>
@@ -55,7 +57,6 @@ button:hover, a:hover {
 						<a href="#menu-toggle" class="gradient-menu" id="menu-toggle"></a> &nbsp;Map&nbsp;
 						<!-- a href="#menu-toggle" class="btn btn-default" >Toggle Sidebar</a -->
 					</h1>
-                  
             <p><button type="submit" onclick="window.open('login.html')">Signout</button></p>
 					<!-- you can use tables or divs for the overall layout -->
 					<div id="map_canvas" style="position: relative; overflow: hidden;">
