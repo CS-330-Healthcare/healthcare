@@ -2,7 +2,7 @@
 
 Instructions:
 
-Step 1: Go to Login.html
+Step1: Go to Login.html
 
 Step 2a: On Login Page - 
 
@@ -23,13 +23,7 @@ Step 2b: On the Login Page, if you dont have an account, you can signup using th
 
 Features Included: ( in Login.html and Signup.html)
 1. Show Password
-2. On pressing the cancel button, you return to the login page.
+2. On pressing the cancel or reloading button on your browser, the input( Username/Password) disappears.
 3. If invalid user credentials are entered, a pop-up appears notifying the user of incorrect credentials.
-
-Step 3: Click register to move onto the homepage
-
-Step 4: Click "find a primary care provider"
-
-Step 5: Navigate the map to see some providers. Click on their name in the sidebar to see their location. 
 
 
