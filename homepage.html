@@ -69,16 +69,33 @@ h2:hover {
 
 <div class="split left">
   <div class="centered">
-    <button-left type="button" class="button"  onclick="window.open('map-index.html')"> <h2> Find a Primary Care Doctor </h2></button-left>
+    <button-left type="button" class="button"  onclick="window.open('map-index.html')"> <h2 style = "font-size:50px"> Find a Primary Care Doctor </h2></button-left>
 
   </div>
 </div>
 
 <div class="split right">
   <div class="centered">
-    <button-right type="button" class="button" onclick="window.open('service-map-index.html')"> <h2>Find a Service</h2></button-right>
+
+    <!-- <button-right type="button" class="button" onclick="window.open('service-map-index.html')">  -->
+      <h3 style = "font-size:50px">Find a Service</h3>
+    <!-- </button-right> -->
+    <div id="sort-select">
+      <select name="list" id="list" accesskey="target">
+        <option value='none' selected>Select a Service</option>
+        <option value="service-map-index.html">Flu Shot</option>
+        <!-- UPDATE THESE LINKS -->
+        <option value="">Blood Test</option>
+        <option value="">Mammogram</option>
+        <option value="">Colonoscopy</option>
+        <option value="">General Checkup / Physical</option>
+      </select>
+      <input type=button value="Search" onclick="goToNewPage()" />
+    </div>
   </div>
 </div>
 
 </body>
+
+<script  src="./homepage-script.js"></script>
 </html>
