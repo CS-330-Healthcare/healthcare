@@ -105,4 +105,12 @@ function createMarker(latlng, name, html) {
 	}).appendTo(sidebar);
 }
 
+function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+
 google.maps.event.addDomListener(window, "load", initialize);
