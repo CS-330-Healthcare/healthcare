@@ -2,7 +2,7 @@
 
 Instructions:
 
-Step 1: Go to Login.html
+Step 1: Go to login.html
 
 Step 2a: On Login Page - 
 
@@ -26,10 +26,14 @@ Features Included: ( in Login.html and Signup.html)
 2. On pressing the cancel button, you return to the login page.
 3. If invalid user credentials are entered, a pop-up appears notifying the user of incorrect credentials.
 
-Step 3: Click register to move onto the homepage
+Step 3a: If on the registration page, click register to move on to the homepage
 
-Step 4: Click "find a primary care provider"
+Step 3b: If on the user profile page, click "Go to Dashboard" to move on to the homepage. 
 
-Step 5: Navigate the map to see some providers. Click on their name in the sidebar to see their location. 
+Step 4: Select "Flu Shot" from the dropdown underneath "Find a Service"
+
+Step 5: Navigate the map to see some flu shot options. Click on their name in the sidebar to see their location. 
+
+Step 6: Use the dropdown to sort the sidebar entries by price. 
 
 
