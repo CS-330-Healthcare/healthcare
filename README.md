@@ -1,5 +1,4 @@
 # healthcare
-*This text will be italic*
 
 Instructions:
 
