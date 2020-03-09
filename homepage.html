@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: black;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.left {
+  left: 0;
+  background-color: #DCDCDC;
+}
+
+.right {
+  right: 0;
+  background-color: #D3D3D3;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button-left {
+  background-color: #DCDCDC;
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button-right {
+  background-color: #D3D3D3;
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+h2:hover {
+  color: rgb(0, 114, 178);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <button-left type="button" class="button"  onclick="window.open('map-index.html')"> <h2 style = "font-size:50px"> Find a Primary Care Doctor </h2></button-left>
+
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+
+    <!-- <button-right type="button" class="button" onclick="window.open('service-map-index.html')">  -->
+      <h3 style = "font-size:50px">Find a Service</h3>
+    <!-- </button-right> -->
+    <div id="sort-select">
+      <select name="list" id="list" accesskey="target">
+        <option value='none' selected>Select a Service</option>
+        <option value="service-map-index.html">Flu Shot</option>
+        <!-- UPDATE THESE LINKS -->
+        <option value="">Blood Test</option>
+        <option value="">Mammogram</option>
+        <option value="">Colonoscopy</option>
+        <option value="">General Checkup / Physical</option>
+      </select>
+      <input type=button value="Search" onclick="goToNewPage()" />
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script  src="./homepage-script.js"></script>
+</html>
