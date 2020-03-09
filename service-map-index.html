@@ -34,7 +34,15 @@ button:hover, a:hover {
 		<ul class="sidebar-nav" id="side_bar">
 			<li class="sidebar-brand" style="font-weight: bold; color: #000; border-bottom: 0px; border-bottom-color: black;">
 				<h1>Flu Shots</h1>
-				<div id="sort-select">
+        <div id = dropdown class="dropdown">
+          <button class="dropbtn">Sort Results</button>
+          <div class="dropdown-content">
+            <a href="price-service-map-index.html">Price Low-to-High</a>
+            <a href="distance-service-map-index.html">Distance Low-to-High</a>
+            <a href="rating-service-map-index.html">Ratings High-to-Low</a>
+          </div>
+        </div>
+				<!-- <div id="sort-select">
 					<select name="list" id="list" accesskey="target">
 						<option value='none' selected>Sort Results</option>
 						<option value="price-service-map-index.html">Price Low-to-High</option>
@@ -42,7 +50,7 @@ button:hover, a:hover {
 						<option value="rating-service-map-index.html">Ratings High-to-Low</option>
 					</select>
 					<input type=button value="Sort" onclick="goToNewPage()" />
-				</div>
+				</div> -->
 			</li>
 			<hr>
 		</ul>
