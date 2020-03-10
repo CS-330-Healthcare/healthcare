@@ -89,9 +89,7 @@ span.psw {
       <button type="button" onclick="check(this.form)" value="Login"/> Login </button>
 
 
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
@@ -116,7 +114,7 @@ function check(form)
     window.open('Profile1.html', "_self")
   }
 
- if(form.userid.value == "diane" && form.pswrd.value == "diane")
+ else if(form.userid.value == "diane" && form.pswrd.value == "diane")
   {
     window.open('Profile2.html', "_self")
   }
