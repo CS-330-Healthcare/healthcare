@@ -9,6 +9,48 @@
 
 </head>
 <style>
+    
+.arrow-down {
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: relative;
+}
+
+.arrow-down.active {
+  background: red;
+}
+
+.arrow-down:before, .arrow-down:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 20px;
+  transition: transform .5s;
+}
+
+.arrow-down:before {
+  right: 21px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: rotate(45deg);
+}
+
+.arrow-down:after {
+  right: 10px;
+  transform: rotate(-45deg);
+}
+
+.arrow-down.active:before {
+  transform: rotate(-45deg);
+}
+
+.arrow-down.active:after {
+  transform: rotate(45deg);
+}
     button {
   border: none;
   outline: 0;
@@ -45,7 +87,11 @@ button:hover, a:hover {
 			<div class="row">
 				<div class="col-lg-12">
 					<h1>
-						<a href="#menu-toggle" class="gradient-menu" id="menu-toggle"></a> &nbsp;Map&nbsp;
+                        
+                   <div class="arrow-down"  id="menu-toggle" onclick="this.classList.toggle('active')">
+                        </a> &nbsp;&nbsp;
+                        </div>
+						
 						<!-- a href="#menu-toggle" class="btn btn-default" >Toggle Sidebar</a -->
 					</h1>
                     <p><button type="submit" onclick="window.open('login.html', '_self')">Signout</button></p>
