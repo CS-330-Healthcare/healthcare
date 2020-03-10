@@ -63,8 +63,30 @@ function initialize() {
 	var marker = createMarker(
 		point,
 		"$40 <br> Out of Network <br> CVS Pharmacy <br> Rating: 3.4/5.0",
-		"$40 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201 <br> (847) 328-3105"
+		"$40 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave., Evanston, IL 60201 <br> (847) 328-3105"
 	);
+
+	var point = new google.maps.LatLng(42.0492, -87.6821);
+	var marker = createMarker(
+		point,
+		"$20 <br> In Network <br> Passport Health <br> Rating: 4.9/5.0",
+		"$20 <br> In Network <br> Passport Health <br> 1718 Sherman Ave., Evanston, IL 60201 <br> (847) 816-3434"
+	);
+
+	var point = new google.maps.LatLng(42.056445, -87.692647);
+	var marker = createMarker(
+		point,
+		"$25 <br> Out of Network <br> Walgreens <br> Rating: 3.2/5.0",
+		"$25 <br> Out of Network <br> Walgreens <br> 2100 Green Bay Rd., Evanston, IL 60201 <br> (847) 475-0996"
+	);
+
+	var point = new google.maps.LatLng(42.048287, -87.682979);
+	var marker = createMarker(
+		point,
+		"$10 <br> In Network <br> Simply Pure RX <br> Rating: 1.2/5.0",
+		"$10 <br> In Network <br> Simply Pure RX <br> 1607 Benson Ave., Evanston, IL 60201 <br> (847) 227-8020"
+	);
+
 
 }
 
@@ -100,7 +122,7 @@ function createMarker(latlng, name, html) {
 			google.maps.event.trigger(marker, "click");
 		},
 		mouseenter: function() {
-			$(this).css("color", "rgb(45, 100, 245)"); // change sidebar text to blue when you hover
+			$(this).css("color", "rgb(0, 114, 178)"); // change sidebar text to blue when you hover
 			$(this).css("font-weight", "bold"); // change sidebar text to bold when you hover
 			infowindow.setContent(contentString);
 			$(this).css(infowindow.open(map, marker));
