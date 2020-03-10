@@ -58,20 +58,6 @@ function initialize() {
 		"Dr. Ng Hyman MD -- In Network<br>General Practitioner<br>633 Emerson St.<br>(847) 491-2119"
 	);
 
-	var point = new google.maps.LatLng(42.065490, -87.684210);
-	var marker = createMarker(
-		point,
-		"<br>Dr. Jamie Titen, DO",
-		"Dr. Jamie Titen, DO -- Out of Network<br>Family Practice Physician<br>2650 Ridge Ave., Suite 4210<br>(847) 570-1010"
-	);
-
-	var point = new google.maps.LatLng(42.049122, -87.685097);
-	var marker = createMarker(
-		point,
-		"<br>Dr. Susan L. Alt, MD",
-		"Dr. Susan L. Alt, MD -- Out of Network<br>Family Practice Physician<br>1704 Maple Ave, Suite 200<br>(847) 535-7157"
-	);
-
 
 
 }

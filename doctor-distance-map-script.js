@@ -44,25 +44,19 @@ function initialize() {
 	// var marker = createMarker(
 	// "<br> <br><br>"
 	// );
-	var point = new google.maps.LatLng(42.048152, -87.684209);
-	var marker = createMarker(
-		point,
-		"<br><br><br>Dr. Steven Beckway, DO",
-		"Dr. Steven Beckway, DO -- In Network<br>Family Practice Physician<br>909 Davis St., Suite 200<br>(847) 866-3700"
-	);
 
 	var point = new google.maps.LatLng(42.052215, -87.678939);
 	var marker = createMarker(
 		point,
-		"<br>Dr. Ng Hyman, MD",
+		"<br><br><br>Dr. Ng Hyman, MD",
 		"Dr. Ng Hyman MD -- In Network<br>General Practitioner<br>633 Emerson St.<br>(847) 491-2119"
 	);
 
-	var point = new google.maps.LatLng(42.065490, -87.684210);
+	var point = new google.maps.LatLng(42.048152, -87.684209);
 	var marker = createMarker(
 		point,
-		"<br>Dr. Jamie Titen, DO",
-		"Dr. Jamie Titen, DO -- Out of Network<br>Family Practice Physician<br>2650 Ridge Ave., Suite 4210<br>(847) 570-1010"
+		"<br>Dr. Steven Beckway, DO",
+		"Dr. Steven Beckway, DO -- In Network<br>Family Practice Physician<br>909 Davis St., Suite 200<br>(847) 866-3700"
 	);
 
 	var point = new google.maps.LatLng(42.049122, -87.685097);
@@ -70,6 +64,13 @@ function initialize() {
 		point,
 		"<br>Dr. Susan L. Alt, MD",
 		"Dr. Susan L. Alt, MD -- Out of Network<br>Family Practice Physician<br>1704 Maple Ave, Suite 200<br>(847) 535-7157"
+	);
+
+	var point = new google.maps.LatLng(42.065490, -87.684210);
+	var marker = createMarker(
+		point,
+		"<br>Dr. Jamie Titen, DO",
+		"Dr. Jamie Titen, DO -- Out of Network<br>Family Practice Physician<br>2650 Ridge Ave., Suite 4210<br>(847) 570-1010"
 	);
 
 
