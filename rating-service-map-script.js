@@ -49,42 +49,42 @@ function initialize() {
 	var marker = createMarker(
 		point,
 		"<br><br><br>$20 <br> In Network <br> Passport Health <br> Rating: 4.9/5.0",
-		"$20 <br> In Network <br> Passport Health <br> 1718 Sherman Ave., Evanston, IL 60201 <br> (847) 816-3434"
+		"(847) 816-3434<br>$20 <br> In Network <br> Passport Health <br> 1718 Sherman Ave., Evanston, IL 60201"
 	);
 
 	var point = new google.maps.LatLng(42.052215, -87.678939);
 	var marker = createMarker(
 		point,
 		"$15 <br> In Network <br> Searle Health Center <br> Rating: 4.6/5.0",
-		"$15 <br> In Network <br> Searle Health Center <br>633 Emerson St.<br>(847) 491-2119"
+		"(847) 491-2119<br>$15 <br> In Network <br> Searle Health Center <br>633 Emerson St."
 	);
 
 	var point = new google.maps.LatLng(42.0490, -87.6815);
 	var marker = createMarker(
 		point,
 		"$40 <br> Out of Network <br> CVS Pharmacy <br> Rating: 3.4/5.0",
-		"$40 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave., Evanston, IL 60201 <br> (847) 328-3105"
+		"(847) 328-3105<br>$40 <br> Out of Network <br> CVS Pharmacy <br> 1711 Sherman Ave., Evanston, IL 60201"
 	);
 
 	var point = new google.maps.LatLng(42.056445, -87.692647);
 	var marker = createMarker(
 		point,
 		"$25 <br> Out of Network <br> Walgreens <br> Rating: 3.2/5.0",
-		"$25 <br> Out of Network <br> Walgreens <br> 2100 Green Bay Rd., Evanston, IL 60201 <br> (847) 475-0996"
+		"(847) 475-0996<br>$25 <br> Out of Network <br> Walgreens <br> 2100 Green Bay Rd., Evanston, IL 60201"
 	);
 
 	var point = new google.maps.LatLng(42.0394, -87.6806);
 	var marker = createMarker(
 		point,
 		"$35 <br> Out of Network<br>Jewel-Osco Pharmacy <br> Rating: 2.9/5.0",
-		"$35 <br> Out of Network<br> Jewel-Osco Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201<br>(847) 328-3105"
+		"(847) 328-3105<br>$35 <br> Out of Network<br> Jewel-Osco Pharmacy <br> 1711 Sherman Ave, Evanston, IL 60201"
 	);
 
 	var point = new google.maps.LatLng(42.048287, -87.682979);
 	var marker = createMarker(
 		point,
 		"$10 <br> In Network <br> Simply Pure RX <br> Rating: 1.2/5.0",
-		"$10 <br> In Network <br> Simply Pure RX <br> 1607 Benson Ave., Evanston, IL 60201 <br> (847) 227-8020"
+		"(847) 227-8020 <br> $10 <br> In Network <br> Simply Pure RX <br> 1607 Benson Ave., Evanston, IL 60201"
 	);
 
 
@@ -120,6 +120,7 @@ function createMarker(latlng, name, html) {
 		html: name,
 		click: function() {
 			google.maps.event.trigger(marker, "click");
+			alert("\nCall to make an appointment or check drop-in hours: \n\n" + (contentString.replace(/<br ?\/?>/g, "\n")).substr(0,14));
 		},
 		mouseenter: function() {
 			$(this).css("color", "rgb(0, 114, 178)"); // change sidebar text to blue when you hover

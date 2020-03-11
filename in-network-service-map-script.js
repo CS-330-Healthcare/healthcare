@@ -50,21 +50,21 @@ function initialize() {
 	var marker = createMarker(
 		point,
 		"<br><br><br>$15 <br> In Network <br> Searle Health Center <br> Rating: 4.6/5.0",
-		"$15 <br> In Network <br> Searle Health Center <br>633 Emerson St.<br>(847) 491-2119"
+		"(847) 491-2119<br>$15 <br> In Network <br> Searle Health Center <br>633 Emerson St., Evanston, IL 60201"
 	);
 
 	var point = new google.maps.LatLng(42.0492, -87.6821);
 	var marker = createMarker(
 		point,
 		"$20 <br> In Network <br> Passport Health <br> Rating: 4.9/5.0",
-		"$20 <br> In Network <br> Passport Health <br> 1718 Sherman Ave., Evanston, IL 60201 <br> (847) 816-3434"
+		"(847) 816-3434<br>$20 <br> In Network <br> Passport Health <br> 1718 Sherman Ave., Evanston, IL 60201"
 	);
 
 	var point = new google.maps.LatLng(42.048287, -87.682979);
 	var marker = createMarker(
 		point,
 		"$10 <br> In Network <br> Simply Pure RX <br> Rating: 1.2/5.0",
-		"$10 <br> In Network <br> Simply Pure RX <br> 1607 Benson Ave., Evanston, IL 60201 <br> (847) 227-8020"
+		" (847) 227-8020<br>$10 <br> In Network <br> Simply Pure RX <br> 1607 Benson Ave., Evanston, IL 60201"
 	);
 
 
@@ -100,6 +100,7 @@ function createMarker(latlng, name, html) {
 		html: name,
 		click: function() {
 			google.maps.event.trigger(marker, "click");
+			alert("\nCall to make an appointment or check drop-in hours: \n\n" + (contentString.replace(/<br ?\/?>/g, "\n")).substr(0,14));
 		},
 		mouseenter: function() {
 			$(this).css("color", "rgb(0, 114, 178)"); // change sidebar text to blue when you hover
