@@ -113,7 +113,7 @@ button:hover {
 </style>
 <body>
 
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form action="/action_page.php"  onsubmit= "window.open('homepage.html')" style="border:1px solid #ccc">
   <div class="container">
     <h1>Register</h1>
     <p>Fill in Your Details and Register</p>
@@ -176,7 +176,7 @@ button:hover {
       <button type="button" class="cancelbtn"  onclick="window.open('login.html', '_self')">Cancel</button>
 
       <!-- // FIX THIS SO THAT IT ONLY GOES TO HOMEPAGE IF YOU'VE ENTERED ALL INFO.  -->
-      <button type="submit" class="signupbtn" onclick="window.open('homepage.html', '_self')" >Sign Up</button>
+      <button type="submit" class="signupbtn" >Sign Up</button>
     </div>
   </div>
 
