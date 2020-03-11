@@ -120,6 +120,7 @@ function createMarker(latlng, name, html) {
 		html: name,
 		click: function() {
 			google.maps.event.trigger(marker, "click");
+			alert("Call or visit this location: <b>" + contentString); // THIS IS WHERE I ADDED STUFF// ////////////////////////////////////////////////
 		},
 		mouseenter: function() {
 			$(this).css("color", "rgb(0, 114, 178)"); // change sidebar text to blue when you hover
