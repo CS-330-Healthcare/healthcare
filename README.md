@@ -123,8 +123,7 @@ Paper Prototyping: Users often clicked “Review your favorite doctors,” which
 <p>
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+![](https://lh5.googleusercontent.com/fiauOz_rQgidA_wRZNg4L2N0omAnX38JpM6BKEFZNu4QTC-6Jf4jPtaJAYEhCISPOBwJmpzOek0cF0kB3-duqb8UAsFu-fo5cBT5lPWbTNHzhE14vtlcXzI4ZKcTMQzsKB8vTgye) 
  
 </p>
 <p>
