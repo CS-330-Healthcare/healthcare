@@ -1,12 +1,12 @@
-CS330: Healthcare
+# CS330: Healthcare
 
-Problem & Related Work
+## Problem & Related Work
 
-The problem and why it's important:
+### The problem and why it's important:
 
 Healthcare costs are a mystery to the average patient due to a lack of transparency from hospitals and insurance companies, and lack of ease of accessibility to the resources that are available. Combined, these two issues pose a threat of a public health issue: if people do not seek out medical help when they need it, it can lead to worse patient outcomes and increased long-term treatment costs. The unpredictable costs and inaccessibility of knowing what the best medical option is available for certain patients do not encourage people to take advantage of the benefits they have at their disposal, including early medical intervention and lower costs due to insurance plans. Our solution seeks to improve the accessibility of all possible medical information that can be found, helping patients make the best informed decisions regarding their healthcare needs based on preferences including insurance plans (in or out-of-network), distance, price, etc.
 
-Related work in this space and how your team aimed to improve/build upon existing efforts: 
+### Related work in this space and how your team aimed to improve/build upon existing efforts: 
 
 Although federal regulations finalized in November of last year would require hospitals to release the actual amounts billed to insurers, making healthcare costs more transparent and enabling the patient to "shop around" for a provider, such regulations are not set to go into effect until 2021. Besides, once this information is available, it may not be presented in a manner that makes it easy for the patient to utilize this information because it is not in the hospital's interest to do so. If this problem were to be addressed, the consumer would be empowered because they would be able to have a more realistic idea of what their out-of-pocket costs will be. A solution could also entail symptoms analysis, giving users the insight to pursue the most appropriate type of care for their particular health issue, which in turn would allow them to avoid excessive and unnecessary costs.
 
@@ -14,17 +14,17 @@ Currently, some insurance companies have websites that help their customers find
 
 Our website would improve on these relatively similar solutions by providing an even more comprehensive, intuitive, and centralized location for all users to be able to find the information they are looking for to make the best decision for themselves with regards to their health care needs. The cost would be more transparent and accurate based on what the user's insurance plan is, and if cost doesn't matter as much to a user, potentially distance and reviews may allow them to make a more well-informed decision for themselves.
 
-User Research
+## User Research
 
-What you wanted to learn via interviews and observations: 
+### What you wanted to learn via interviews and observations: 
 
 We had two main goals for being more informed of the problem so that we could later approach a solution with actual potential users, which we gathered through interviews and observations. The first was to understand which parts of the healthcare process were the most frustrating for users, and which users these problems most applied to. Whether this was cost transparency, wait times, accessibility to information, or any other problem, we sought to understand what people find frustrating about receiving healthcare. The second goal was to understand where our efforts could best be put forth to provide a solution through an app. Essentially, our second goal was to understand what would empower users to make more informed decisions about their healthcare, what would make them feel better about the process overall, and how we could deliver a web-based service to improve their experience in these areas. As an example of an interview prompt, we asked our users to walk through how they would go about scheduling a trip to the dentist, including how they would find the cost of the appointment ahead of time.
 
-Your research approach:
+### Your research approach:
 
 Our main research approach was to interview actual potential users for feedback on the problem, so we could approach making an informed solution. The overarching goal was to gauge whether people would find value in an app we were considering building and to determine what features potential users would find valuable, but more generally, we also wanted to get a better sense of the problems faced by the healthcare industry from the perspective of people with experience interacting with it. When developing our interview questions, we tried to word the questions in a way that would not lead our interviewees to a particular response. Then, when conducting the interview, we started with broader questions about what they thought were the main issues with the healthcare industry before moving onto questions that were more closely related to our specific idea.
 
-What you learned from your interviews and observations in terms of user needs & goals (i.e. tasks) your app should support: 
+### What you learned from your interviews and observations in terms of user needs & goals (i.e. tasks) your app should support: 
 
 Our interviewees mentioned that finding costs ahead of time is challenging, but for many of our interviewees, finding these costs was not a priority, which was a surprising result. For example, Ethan's stepmom mentioned that because her insurance plan has a low deductible, she typically just goes to the appointment and waits for a bill. In contrast, Ethan's mom said that because of her high out-of-pocket expenses, she makes sure to find the costs before planning a visit, to make sure that they won't be prohibitively high. This distinction highlights the differences between healthcare users and has allowed us to focus on those who are more likely to benefit from our app.
 
@@ -38,11 +38,11 @@ What you learned from your interviews and observations in terms of the various u
 
 We realized through our research that with our website, we had the potential to help a wide range of users. By broadening the ways in which we could address different potential users' frustrations regarding healthcare, we could envision almost anyone, with or without health insurance, make the most informed decisions regarding their health care choices. For example, for those with low out-of-pocket expenses because their insurance plan is so comprehensive can make their decisions based on other factors like distance. Those with high out-of-pocket expenses can base their choices on both price and distance. Both can utilize the feature that conveys which doctors/services are in-network or out-of-network, which is shown based on the insurance plan that users may (or may not) have. We also wanted to implement a "leave a review" feature for both sets of users to be able to utilize, where users could leave reviews of their services and also see the reviews of others to make even more informed prices.
 
-Paper Prototyping 
+## Paper Prototyping 
 
-Paper Prototype Link: <https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e80c2663-5a56-4ae8-b0d1-ab5f00512d58>
+### Paper Prototype Link: <https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e80c2663-5a56-4ae8-b0d1-ab5f00512d58>
 
-How your concept was received by testers, and and usability problems:
+### How your concept was received by testers, and and usability problems:
 
 During user testing, we noticed a few design concepts that could have been improved. For example, it was difficult for some users to distinguish between "leave a review" versus "review your favorite doctors". Also, no one utilized the sorting capabilities (i.e. sort by price, distance, in-network, etc.) because they weren't so obvious, especially with regards to the task that we asked subjects to complete. However, overall, users were able to find services and doctors very easily using the website, which met our ultimate goal for the website. Generally, features that were intended to be clicked were clicked, and features that weren't were not, so it seemed like the design was intuitive enough.
 
@@ -50,17 +50,17 @@ Paper Prototyping: Users often clicked "Review your favorite doctors," which was
 
 ![](https://lh5.googleusercontent.com/fiauOz_rQgidA_wRZNg4L2N0omAnX38JpM6BKEFZNu4QTC-6Jf4jPtaJAYEhCISPOBwJmpzOek0cF0kB3-duqb8UAsFu-fo5cBT5lPWbTNHzhE14vtlcXzI4ZKcTMQzsKB8vTgye) 
 
-What directions you pursued based on what you learned (resolutions):
+### What directions you pursued based on what you learned (resolutions):
 
 Based on the feedback we received from testing, we decided to further refine and test methods for leaving a review and for seeing your personal list of favorite doctors. Other smaller features we realized we could improve on was refining wording to enhance clarity, implementing a "current location" in the map view, adding a drop-down option when indicating which doctor you're leaving a review for, and testing different designs for the sorting button to make it stand out. 
 
-High-Fidelity Prototyping 
+## High-Fidelity Prototyping 
 
-A description of the tasks you decided to support: (This should include screenshots of your app, with an explanation of how the various app features were intended to support the task.)
+### A description of the tasks you decided to support: (This should include screenshots of your app, with an explanation of how the various app features were intended to support the task.)
 
 There are four main tasks that our group decided to test and support using our app. The first task we implemented is to create a user account and input relevant user information, such as insurance information and login credentials, into the app. The second is to login to an existing user profile to view your profile information. This can be done using a sample login with username and password "bojack". The next task is to view primary care doctors in your area and find one to schedule an appointment with that is in your insurance network. The final task is to find the least expensive place in your area to get a flu shot.
 
-Task 1: Create a User Account
+### Task 1: Create a User Account
 
 ![](https://lh3.googleusercontent.com/Qry9486BADXPnZu6r8YFU3cW7VI9GmhMguUKc6e3QxLkp4Hz--_Sso7Xcuh7uU90nQbBInRheKUzxBgsGVXdEW3sMueo8scimtE4toiAE_LKQkcseBJ7-YIWdskeenPb6d6-jVy4)
 
@@ -68,13 +68,13 @@ Task 1: Create a User Account
 
 ![](https://lh5.googleusercontent.com/CPvfjJ8Tetxn-J5U0bQHgBTa-hyJ0MTX8F-XFwT883jzF4iiq27kYz73wx1BaSNd7MEs6vG9gksgSFQyavtKEsBf1I-FEBNutiDG95UpTpYEeoRI5dfk4PdITdYZdNHL6tTvqjV-)
 
-Task 2: Log in to an existing account
+### Task 2: Log in to an existing account
 
 ![](https://lh3.googleusercontent.com/1ZixwBy1mjXz5mOJt0yb7KZiu-EZ9OlItrs8OFQShsQGKBZKCj4iqniSDRgLDFyyXnvvLBGCxrsCXKx5HzRM04D2HRLoOC571Rx4D7kyq2AJnQ6XEyEuuDjrrqokYE3zHML4uRtx)
 
 ![](https://lh6.googleusercontent.com/haoojMogtD9bR-fehuinq27iy-XYbhvXdYsTwaLhHwk-PowHbKtUI_Rea2sAeGxhnTupEXJVTMJzeMPtSZol-2YBLQjNjX-wQ8_nahBxdXYrGKmwFFjpDLUCmhpR-3DnWc9iyPtn)
 
-Task 3: Find an in-network primary care doctor in your area and schedule an appointment.
+### Task 3: Find an in-network primary care doctor in your area and schedule an appointment.
 
 ![](https://lh4.googleusercontent.com/6QofG_r-nSllq-GKaBkrhuZZ_B9BOzls44gpvn0bandMZZqQnSjCnD6omEWURvPToZrNEm6qvP-GYqfEqin32At6hW3F5omr8LnFl87WwGunXVHFbkWJexP9lMR-fPMGZ_8bwEsV)
 
@@ -88,7 +88,7 @@ Task 3: Find an in-network primary care doctor in your area and schedule an appo
 
 ![](https://lh5.googleusercontent.com/HDyILbQrSvJSgqBNgxktCQju9BPrD0A15pZQrNRqTr2LYLb8cQk6l9Dnb0Wg2ON0pwzAPjF9MgEiHholcmbfU79a9gSFU2IqMvUnm5WXCn77QevasMGIXF5k_VuyF1ii7wKjRjvd)
 
-Task 4: Find the least expensive location in the area to get a flu shot
+### Task 4: Find the least expensive location in the area to get a flu shot
 
 ![](https://lh5.googleusercontent.com/yDxeSXce0T1f8Bp_tGRJmp3eeG33vjkLQM4PUbx7iojzV0vrizFS6-YaP13H1uYn4jGwtOrH_p0n8veR8c1fnKN_ncE2u5dIZt6NniDNJYvVONZ0sRQGeHn-XI7Fn_i9H2Ej3jd-)
 
@@ -102,33 +102,33 @@ Task 4: Find the least expensive location in the area to get a flu shot
 
 ![](https://lh3.googleusercontent.com/iyIQhTpjHWm5jWSvupd-mWISTS2Rweu1AZWjk2-GTd0B5floT5xq8Un2kZGzrxW5UjovlZReYuoGIbVvsoKRp1efvC643wIEQrZatz4W0xyuEEpjyKpUBQIZDzJq5yr5hkDm7i2C)
 
-A description of your three components you chose to implement:
+### A description of your three components you chose to implement:
 
 Because we were a group of 5, our group implemented four components. The first component was a data collection form. This is what was used to collect insurance and user profile information from new users creating a profile on our site. We implemented data validation by barring users from registering until all of the fields on the registration page are filled out. The next component is data visualization. This is through two forms: One through a map, where users can see where the physical locations or doctors are, and also through a list on the sidebar of the map, where users can see a list of these locations along with more information. The next component is user profiles. We created two example user profiles to show what a sample user profile would look like, showing name and insurance information. An example can be accessed using the username and password "bojack" from the login screen. The final component is an interactive data filter. This filter allows users to sort their search results on the map by factors such as price, distance, and rating.  
 
-Component 1: Data Collection
+### Component 1: Data Collection
 
 ![](https://lh6.googleusercontent.com/B6EWM4StP5kBbftYDHPg9xpEGcihkeF7o1nUbigvblmhEFevSJtgsVqGyNKzPX_AQkLnNGNnLELUkeGnqOqvVtzl-Bc9iopgVhZ7Po_iJt8HhkqHpCiDGQ7kRpTDT4jFdBHRmrRC)
 
-Component 2: User Profiles
+### Component 2: User Profiles
 
 ![](https://lh3.googleusercontent.com/RdCeK2WagRYFdS00_Wzs32J6YuCRQh6d80Z9OLltMxe8mb25sQlU9UN-a8wjxnss3Uz0z-BQfkFp6mhMZqNRiqn_xdxdRu5_4GDs-klNfJnvQ936Go0qWlrf_EKWZFfhBEF2XbPO)
 
-Component 3: Data Visualization
+### Component 3: Data Visualization
 
 ![](https://lh4.googleusercontent.com/yq7ropxGTIWspZYKPIgud5nurrmP-kogRcsZLSIvWodY86NRgBWc8k58VXtBHdJlSg2xBdXKwFSFaY9QyGqOYZjOaQHVuq08P8HISG4cBLshtZRX47MmkuBIl812F1bOy1Ci2lMY)
 
 ![](https://lh4.googleusercontent.com/LpTjZzCsXafcx2LDSMwop7kLT6y1YX4jZDYBZEvfz2QJAKuBfelAXWc79PhfdsJcPomUZPYIrkNqURZaahxDeWUWpE-71diAOhDvYz7rtjLs6fl39RJDI5Et8o3nPYV-QTFL4-Vh)
 
-Component 4: Interactive Data Filter
+### Component 4: Interactive Data Filter
 
 ![](https://lh6.googleusercontent.com/0TTnF6MG0LjqjfSXgAUjbicCw8nvrFRDgDKEvQYWzo60nrFikRk964eW0BdtUDO_u1TOA02CdTi-d7-L4Wt2KVPEDvY4uQznpUXfwhfBD-zelbX5oD4xnH5Df7QHTLsaOwx-pLTh)
 
 ![](https://lh6.googleusercontent.com/Sb8Z5dQPiotIWFilQWyuPE6QzybphSgsCi64JSiNkoihilHYjgTYxiBy3J9JlqQLl7Pk5ASRtLXSmjdoGUojxibM2_6pH8bpOsX1w2AFhP4QZaSGMPLMwJ1mffyOw7BnUbmp1bP8)
 
-Reflection
+## Reflection
 
-What you managed to accomplish in the time you had:
+### What you managed to accomplish in the time you had:
 
 In the time that we had available, we were able to implement many of the capabilities that we thought would be useful for potential users, as we determined through interviews at the beginning of the process and multiple iterations of user testing. These included being able to register for an account, sign into an existing account, conduct a search for a primary care doctor, and find a location to get a flu shot. We were able to implement sorting and filtering capabilities, so the users could more easily find the information most relevant to them as well as other data visualization effects such as tags on a map and hover effects that helped accomplish this same goal. 
 
@@ -138,7 +138,7 @@ Outside of the map pages, one user was also confused when navigating the homepag
 
 In addition to implementing these individual components, we were able to connect them in ways that made sense for our functionality. For example, signing in would take your user profile, and here there's a link to go to the homepage, which allows the user to utilize some of the other implemented components. Also, clicking the "Signout" button on any of these pages would take you back to the beginning (the login page). This way, we were able to ensure that there would be no point where the user would get stuck. 
 
-What the next steps of your app would be if you had more time: 
+### What the next steps of your app would be if you had more time: 
 
 If we had more time, we would have liked to implement a reviews feature, a component we had come up with through conducting our interviews at the beginning of the quarter. This feature would have allowed users to leave reviews for the physicians they ended up scheduling an appointment with or a location where they had received a service, such as getting a flu shot. This would have helped improve the user experience by allowing users to give their feedback which would improve the accuracy of the ratings.
 
@@ -146,13 +146,15 @@ Another feature we would have liked to implement is a way for users to favorite 
 
 If we'd had a lot more time in the course, we would have tried to move away from having all the information hard-coded. This would have included the ability to create a user profile and have it be saved so that a user can access it by logging in or making it so that the sorting did not require separate .js and .html files. 
 
-Links
+## Links
 
-A link to your team's repository:  <https://github.com/CS-330-Healthcare/healthcare> 
+### A link to your team's repository:  
+<https://github.com/CS-330-Healthcare/healthcare> 
 
-A link to a working version of your prototype (or a video of it):  <https://cs-330-healthcare.github.io/healthcare/index.html>
+### A link to a working version of your prototype (or a video of it):  
+<https://cs-330-healthcare.github.io/healthcare/index.html>
 
-Instructions for running your app (including how your prototype is best viewed):
+### Instructions for running your app (including how your prototype is best viewed):
 
 The prototype was constructed on Windows 10 Chrome, so it is best viewed via this platform. Begin on the login.html page. From here, you can either login to an existing user profile using username and password "bojack", or you can create your own new account. From here, you can navigate to the homepage and choose to either find a new doctor in the area and access that map and information, or you can choose to find a flu shot, and access that map and information. On the results page, you can filter the results to only show options that are in-network with your insurance or sort the results in order of distance, ratings, or price.
 
