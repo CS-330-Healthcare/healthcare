@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+body {
+  font-family: Arial;
+  color: black;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.left {
+  left: 0;
+  /* background-color: #DCDCDC; */
+  background-color: #cbccff;
+}
+
+.right {
+  right: 0;
+  /* background-color: #D3D3D3; */
+  background-color: #b9c4ff;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button-left {
+  background-color: #cbccff;
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button-right {
+  background-color: #D3D3D3;
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+h2:hover {
+  color: rgb(213,94,0);
+}
+
+h3:hover {
+  color: rgb(213,94,0);
+}
+
+#dropdown {
+  display: none;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <!-- <button-left type="button" class="button"  onclick="window.open('map-index.html', '_self')"> -->
+      <h2 onclick="window.open('map-index.html', '_self')" style = "font-size:55px"> Find a Primary Care Doctor </h2>
+      <h21 style = "font-size:25px";><br> Find and compare in-network and out-of-network doctors. </h21>
+
+
+    <!-- </button-left> -->
+
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+
+    <!-- <button-right type="button" class="button" onclick="window.open('service-map-index.html')">  -->
+      <h3 onclick="toggleShowHide()" style = "font-size:55px">Find a Service</h3>
+
+    <!-- </button-right> -->
+    <div id = dropdown class="dropdown">
+      <button class="dropbtn">Select a Service</button>
+      <div class="dropdown-content">
+        <a href="service-map-index.html">Flu Shot</a>
+        <a href="#">Blood Test</a>
+        <a href="#">Mammogram</a>
+        <a href="#">Colonoscopy</a>
+        <a href="#">General Checkup / Physical</a>
+      </div>
+    </div>
+      <h31 style = "font-size:25px"> <br><br> Find the best place to seek out common services like flu shots and blood tests. </h31>
+  </div>
+</div>
+
+</body>
+
+<script  src="./homepage-script.js"></script>
+</html>
