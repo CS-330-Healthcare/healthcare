@@ -144,6 +144,8 @@ If we had more time, we would have liked to implement a reviews feature, a compo
 
 Another feature we would have liked to implement is a way for users to favorite doctors and service providers so that users could better visualize the options they liked most. Unfortunately, we did not have time to implement this, but our user testing did not reveal this as a highly desired feature anyway, potentially because our user tests used lists with few options.
 
+We also would have liked to add additional services to our service map feature. Currently, only the "flu shot" option is functional and as such, this is the service that should be selecteed when testing the app. 
+
 If we'd had a lot more time in the course, we would have tried to move away from having all the information hard-coded. This would have included the ability to create a user profile and have it be saved so that a user can access it by logging in or making it so that the sorting did not require separate .js and .html files. 
 
 ## Links
@@ -151,11 +153,14 @@ If we'd had a lot more time in the course, we would have tried to move away from
 ### A link to your team's repository:  
 <https://github.com/CS-330-Healthcare/healthcare> 
 
+### A link to the P8 branch containing the final version of the prototype:
+<https://github.com/CS-330-Healthcare/healthcare/tree/project_8>
+
 ### A link to a working version of your prototype (or a video of it):  
-<https://cs-330-healthcare.github.io/healthcare/index.html>
+<https://cs-330-healthcare.github.io/healthcare/login.html>
 
 ### Instructions for running your app (including how your prototype is best viewed):
 
-The prototype was constructed on Windows 10 Chrome, so it is best viewed via this platform. Begin on the login.html page. From here, you can either login to an existing user profile using username and password "bojack", or you can create your own new account. From here, you can navigate to the homepage and choose to either find a new doctor in the area and access that map and information, or you can choose to find a flu shot, and access that map and information. On the results page, you can filter the results to only show options that are in-network with your insurance or sort the results in order of distance, ratings, or price.
+The prototype was constructed on Windows 10 Chrome, so it is best viewed via this platform. Begin on the login.html page. From here, you can either login to an existing user profile using username and password "bojack", or you can create your own new account. From here, you can navigate to the homepage and choose to either find a new doctor in the area and access that map and information, or you can choose to find a flu shot, and access that map and information. On the results page, you can filter the results to only show options that are in-network with your insurance or sort the results in order of distance, ratings, or price. Note that currently, only the flu shot service is fully functional. Users should select this option when using the app. 
 
 Hovering over an option in the list will display that options location and additional information in the map on the left side. The information necessary to book an appointment can also be visualized in a different way by clicking "Make an Appointment". This will take the user to a screen with a list of cards for each doctor. Selecting a doctor takes the user to a card with the doctor's location and contact information. On the flu shot results page, you can see a service provider's information by hovering over it in the list, clicking the location in the map, or clicking it in the list, which will open a popup with contact information to schedule an appointment. Once finished with your search, you can return to the login page by clicking "Signout."
