@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 250 px;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="doctor1.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Dr. Steven Beckway</h2>
+        <p class="title">DO</p>
+     
+        <p><button class="button" onclick="window.open('doctor1.html', '_self')">View</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="doctor2.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Dr. Ng Hyman</h2>
+        <p class="title">MD</p>
+    
+    <p><button class="button" onclick="window.open('doctor2.html', '_self')">View</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="doctor3.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>James Titen</h2>
+        <p class="title">DO</p>
+        <p><button class="button" onclick="window.open('doctor3.html', '_self')">View</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="doctor4.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Susan Alt</h2>
+        <p class="title">MD</p>
+        
+     <p><button class="button" onclick="window.open('doctor4.html', '_self')">View</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

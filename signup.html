@@ -66,7 +66,7 @@ hr {
 
 
 button {
-  background-color: #4CAF50;
+  background-color: rgb(0, 114, 178); /*blue*/
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -83,7 +83,7 @@ button:hover {
 
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: rgb(213,94,0);
 }
 
 
@@ -113,7 +113,7 @@ button:hover {
 </style>
 <body>
 
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form action="/action_page.php"  onsubmit= "window.open('homepage.html')" style="border:1px solid #ccc">
   <div class="container">
     <h1>Register</h1>
     <p>Fill in Your Details and Register</p>
@@ -137,7 +137,7 @@ button:hover {
   </div>
 </div>
 -->
-<label for="health_insurance">Insurance Provider:</label>
+<label for="health_insurance"><b>Insurance Provider:</b></label>
 
 <select id="health_insurance">
   <option value="Aetna">Aetna</option>
@@ -146,6 +146,10 @@ button:hover {
   <option value="United Healthcare">United Healthcare</option>
   <option value="Other">Other</option>
 </select>
+
+<br><br>
+<label for="insurance_id"><b>Insurance ID</b></label>
+<input type="text" placeholder="Enter Insurance ID Number" name="insurance_id" required>
 
 <br><br><br>
     <b> Gender</b><br><br> <input type="radio" id="male" name="gender" value="male">
@@ -169,8 +173,10 @@ button:hover {
 
 
   <div class="clearfix">
-      <button type="button" class="cancelbtn"  onclick="location.reload()">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="button" class="cancelbtn"  onclick="window.open('login.html', '_self')">Cancel</button>
+
+      <!-- // FIX THIS SO THAT IT ONLY GOES TO HOMEPAGE IF YOU'VE ENTERED ALL INFO.  -->
+      <button type="submit" class="signupbtn" >Sign Up</button>
     </div>
   </div>
 

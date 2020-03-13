@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!-- This is based on code written by Attila Albert and found here: https://colorlib.com/wp/bootstrap-sidebar/ -->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Services Map</title>
+  <link rel="stylesheet" href="./service-map-style.css">
+
+</head>
+<style>
+
+
+
+.arrow-down {
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: relative;
+}
+
+.arrow-down.active {
+  background: red;
+}
+
+.arrow-down:before, .arrow-down:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 20px;
+  transition: transform .5s;
+}
+
+.arrow-down:before {
+  right: 21px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: rotate(-45deg);
+}
+
+.arrow-down:after {
+  right: 10px;
+  transform: rotate(45deg);
+}
+
+.arrow-down.active:before {
+  transform: rotate(45deg);
+}
+
+.arrow-down.active:after {
+  transform: rotate(-45deg);
+}
+    button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(213,94,0);
+  text-align: center;
+  cursor: pointer;
+  width: 10%;
+        font-size: 18px;}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+    </style>
+<body>
+<!-- partial:index.partial.html -->
+<div id="wrapper" class="">
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav" id="side_bar">
+			<li class="sidebar-brand" style="font-weight: bold; color: #000; border-bottom: 0px; border-bottom-color: black;">
+				<h1>Flu Shots</h1>
+        <div id = dropdown class="dropdown">
+          <button class="dropbtn">Sort Results</button>
+          <div class="dropdown-content">
+            <a href="price-service-map-index.html">Price Low-to-High</a>
+            <a href="distance-service-map-index.html">Distance Low-to-High</a>
+            <a href="rating-service-map-index.html">Ratings High-to-Low</a>
+            <a href="in-network-service-map-index.html">In Network Only</a>
+          </div>
+        </div>
+				<!-- <div id="sort-select">
+					<select name="list" id="list" accesskey="target">
+						<option value='none' selected>Sort Results</option>
+						<option value="price-service-map-index.html">Price Low-to-High</option>
+						<option value="distance-service-map-index.html">Distance Low-to-High</option>
+						<option value="rating-service-map-index.html">Ratings High-to-Low</option>
+					</select>
+					<input type=button value="Sort" onclick="goToNewPage()" />
+				</div> -->
+			</li>
+			<hr>
+		</ul>
+	</div>
+	<!-- /#sidebar-wrapper -->
+	<!-- Page Content -->
+	<div id="page-content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>
+						  <div class="arrow-down"  id="menu-toggle" onclick="this.classList.toggle('active')">
+                        </a> &nbsp;&nbsp;
+                        </div>
+						<!-- a href="#menu-toggle" class="btn btn-default" >Toggle Sidebar</a -->
+					</h1>
+            <p><button id = signout type="submit" onclick="window.open('login.html','_self')">Signout</button></p>
+					<!-- you can use tables or divs for the overall layout -->
+					<div id="map_canvas" style="position: relative; overflow: hidden;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /#page-content-wrapper -->
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.j'></script>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB_aCRKZcaxhEEXc_hKuYKxApthABy6bUE'></script><script  src="./rating-service-map-script.js"></script>
+
+</body>
+</html>
